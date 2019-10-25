@@ -1,0 +1,203 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+
+/* Nav bar */
+.nav{
+	background-color: #132448;
+	margin-top: 0em;
+	padding-top: 0em;
+}
+
+.nav h1{
+	color: #fff;
+	font-family: "Bodoni MT", "Bodoni 76", "Bodoni", "Garamond", "Times New Roman", serif;
+	text-align: center;
+}
+
+.nav h1 a{
+	font-style: normal;
+	text-decoration: none;
+}
+
+.nav h1 a:visited{
+	color: #fff;
+}
+
+.nav h1 a:hover{
+	color: #C4CED3;
+}
+
+.big-title{
+	font-size: 6em;
+	line-height: 1em;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.small-title{
+	font-size: 4em;
+	line-height: 1em;
+	padding: 1em;
+}
+
+.nav ul{
+	display: grid;
+	padding: 0;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.nav li {
+	list-style-type: none;
+}
+
+.link-1903{
+	grid-column: 1 / 2;
+}
+
+.link-1920{
+	grid-column: 2 / 3;
+}
+
+.link-1936{
+	grid-column: 3 / 4;
+}
+
+.link-1948{
+	grid-column: 4 / 5;
+}
+
+.link-1965{
+	grid-column: 5 / 6;
+}
+
+.link-1973{
+	grid-column: 6 / 7;
+}
+
+.link-1982{
+	grid-column: 7 / 8;
+}
+
+.link-1996{
+	grid-column: 8 / 9;
+}
+
+.link-2009{
+	grid-column: 9 / 10;
+}
+
+.nav li a {
+	display: block;
+	height: 3rem;
+	padding: 0.5em;
+	align-self: center;
+	color: #C4CED3;
+	text-decoration: none;
+	border-top: 3px solid #C4CED3;
+	font-family: "Bodoni MT", "Bodoni 76", "Bodoni", "Garamond", "Times New Roman", serif;
+	text-align: center;
+	font-size: 2em;
+}
+
+.nav li a:hover {
+	color: #FAD44D;
+	border-top: 6px solid #FAD44D;
+}
+
+.active{
+	color: #FAD44D;
+	border-top: 6px solid #FAD44D;
+}
+
+
+/* end nav bar */
+
+/* homepage */
+
+.page-title{
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	color: #132448;
+	font-size: 3em;
+	margin-bottom: 1em;
+	line-height: 1.25em;
+}
+
+img{
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: auto;
+	max-width: 600px;
+}
+
+h2{
+	font-family: "Raleway", "Avenir", "Helvetica", serif;
+	color: #132448;
+	font-size: 2.25em;
+	margin-left: 15%;
+	margin-top: 5%;
+}
+
+p{
+	width: 50%;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	line-height: 1.65em;
+	font-family: "GFS Didot", serif;
+	color: #5B6165;
+	font-size: 1.5em;
+}
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+
+	}
+
+} /* end media query */
